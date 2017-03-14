@@ -6,9 +6,53 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit54c79c0d788a181f38aa23a56f9a9ca8
 {
+    public static $files = array (
+        '6195ccae414b7a82ab47247beb894d66' => __DIR__ . '/..' . '/nezamy/route/system/function.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'System\\' => 7,
+        ),
+        'C' => 
+        array (
+            'Core\\' => 5,
+        ),
+        'B' => 
+        array (
+            'Buki\\' => 5,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'System\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nezamy/route/system',
+        ),
+        'Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'Buki\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/izniburak/pdox/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit54c79c0d788a181f38aa23a56f9a9ca8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit54c79c0d788a181f38aa23a56f9a9ca8::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

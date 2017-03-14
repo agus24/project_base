@@ -6,4 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'System\\' => array($vendorDir . '/nezamy/route/system'),
+    'Core\\' => array($baseDir . '/core'),
+    'Buki\\' => array($vendorDir . '/izniburak/pdox/src'),
+    'App\\' => array($baseDir . '/app'),
 );
