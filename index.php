@@ -1,9 +1,8 @@
 <?php
 
-require "boot.php";
-// $request = new Request;
+require 'core/helper.php';
+require 'vendor/autoload.php';
+require 'core/bootstrap.php';
 
-require "route.php";
-
-$route->end();
-
+Router::load('routes.php')
+    ->direct(Request::uri(), Request::method());
