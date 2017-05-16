@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'System\\' => array($vendorDir . '/nezamy/route/system'),
+    'Core\\' => array($baseDir . '/core'),
+    'App\\' => array($baseDir . '/app'),
 );

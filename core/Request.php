@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace Core;
 
 class Request
 {
@@ -9,7 +9,7 @@ class Request
         $php = $_SERVER['PHP_SELF'];
         $php = explode("index.php",$php)[0];
         $uri = $_SERVER['REQUEST_URI'];
-        $uri = explode($php,$uri)[1];
+        // $uri = explode($php,$uri)[1];
         return trim(
             parse_url($uri, PHP_URL_PATH), '/'
         );

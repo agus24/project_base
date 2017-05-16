@@ -1,4 +1,5 @@
 <?php
+namespace Core\Database;
 
 class QueryBuilder
 {
@@ -15,7 +16,7 @@ class QueryBuilder
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(\PDO::FETCH_CLASS);
     }
 
     public function insert($table, $parameters)

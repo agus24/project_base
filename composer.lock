@@ -4,66 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0158aba956b9ffaf8537e2946e2dd59",
+    "hash": "75b80bcdc0ff5bac61035b050e005be0",
+    "content-hash": "8cdbd50b1877f7977023a2bbd81d783f",
     "packages": [
         {
-            "name": "izniburak/pdox",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/izniburak/pdox.git",
-                "reference": "d2035ce83e032244a32958182a11146457ff5d01"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/izniburak/pdox/zipball/d2035ce83e032244a32958182a11146457ff5d01",
-                "reference": "d2035ce83e032244a32958182a11146457ff5d01",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Buki\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "İzni Burak Demirtaş",
-                    "email": "info@burakdemirtas.org",
-                    "homepage": "http://burakdemirtas.org"
-                }
-            ],
-            "description": "Useful Query Builder, PDO Class for PHP. A simple access to your SQL records.",
-            "homepage": "https://github.com/izniburak/PDOx",
-            "keywords": [
-                "builder",
-                "pdo",
-                "php",
-                "query",
-                "sql"
-            ],
-            "time": "2017-02-22T00:30:23+00:00"
-        },
-        {
             "name": "nezamy/route",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nezamy/route.git",
-                "reference": "cb45359727fdee0fac5073d9f447ed8b693f95de"
+                "reference": "9cbcf8b9ec9fbe32b2e1ece6c0e4df228c366322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nezamy/route/zipball/cb45359727fdee0fac5073d9f447ed8b693f95de",
-                "reference": "cb45359727fdee0fac5073d9f447ed8b693f95de",
+                "url": "https://files.phpcomposer.com/files/nezamy/route/9cbcf8b9ec9fbe32b2e1ece6c0e4df228c366322.zip",
+                "reference": "9cbcf8b9ec9fbe32b2e1ece6c0e4df228c366322",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +53,7 @@
                 "restful",
                 "route"
             ],
-            "time": "2017-02-03T18:33:42+00:00"
+            "time": "2017-02-13 11:06:18"
         }
     ],
     "packages-dev": [],

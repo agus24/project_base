@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Core;
+namespace Core;
+
+use System\Request;
+use System\Route;
 
 class App
 {
@@ -19,5 +22,20 @@ class App
         }
 
         throw new Exception("no {$key} in Container");
+    }
+
+    public static function database()
+    {
+        return static::$registry['database'];
+
+        throw new Exception("Database Not Configured");
+    }
+
+    public static function run()
+    {
+        $request = Request::instance();
+        $route = Route::instance($request);
+        require "app/routes.php";
+        $route->end();
     }
 }

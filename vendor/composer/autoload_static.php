@@ -6,23 +6,45 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita9837dc34250fbc38c00fe5d309936f3
 {
-    public static $classMap = array (
-        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
-        'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/controllers/UserController.php',
-        'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
-        'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
-        'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
-        'ComposerAutoloaderInita9837dc34250fbc38c00fe5d309936f3' => __DIR__ . '/..' . '/composer/autoload_real.php',
-        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInita9837dc34250fbc38c00fe5d309936f3' => __DIR__ . '/..' . '/composer/autoload_static.php',
-        'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
-        'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
+    public static $files = array (
+        '6195ccae414b7a82ab47247beb894d66' => __DIR__ . '/..' . '/nezamy/route/system/function.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'System\\' => 7,
+        ),
+        'C' => 
+        array (
+            'Core\\' => 5,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'System\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nezamy/route/system',
+        ),
+        'Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInita9837dc34250fbc38c00fe5d309936f3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita9837dc34250fbc38c00fe5d309936f3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita9837dc34250fbc38c00fe5d309936f3::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

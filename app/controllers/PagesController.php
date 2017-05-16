@@ -2,14 +2,14 @@
 
 namespace App\Controllers;
 
-use App\Core\App;
+use Core\App;
 
 class PagesController
 {
     public function home()
     {
         $users = App::get('database')->selectAll('users');
-
+        // $users = App::database()->selectAll('users');
         return view('index',["users" => $users]);
     }
 
@@ -23,4 +23,8 @@ class PagesController
         return view('contact');
     }
 
+    public function aboutCulture()
+    {
+        return view('about-culture');
+    }
 }

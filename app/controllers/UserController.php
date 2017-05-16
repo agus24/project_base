@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Core\App;
+use Core\App;
 
 class UserController
 {
@@ -19,5 +19,10 @@ class UserController
         ]);
 
         return redirect('user');
+    }
+
+    public function test()
+    {
+        echo 'WOW';
     }
 }

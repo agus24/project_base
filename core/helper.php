@@ -5,7 +5,7 @@ function dd($var)
     die(var_dump($var));
 }
 
-function url($link)
+function makeUrl($link)
 {
     $php = $_SERVER['PHP_SELF'];
     $base = explode("index.php",$php)[0];

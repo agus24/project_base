@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace Core;
 
 class Router
 {
@@ -20,6 +20,9 @@ class Router
 
     public function get($uri, $controller)
     {
+        $uri = str_replace('{', '', $uri);
+        $uri = str_replace('}', '', $uri);
+
         $this->routes['GET'][$uri] = $controller;
     }
 
@@ -30,6 +33,7 @@ class Router
 
     public function direct($uri, $requestType)
     {
+        dd($this->routes);
         if (array_key_exists($uri, $this->routes[$requestType]))
         {
             // return $this->routes[$requestType][$uri];
@@ -40,7 +44,7 @@ class Router
             );
         }
 
-        throw new Exception('No route defined for this URI.');
+        throw new \Exception('No route defined for this URI.');
     }
 
     protected function callAction($controller,$action)
